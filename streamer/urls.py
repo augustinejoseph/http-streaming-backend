@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import streamerView
+from .views import streamerView,streamText
 
 urlpatterns = [
-    path('stream', streamerView, name='streamer-view')
+    path('stream-number', streamerView, name='streamer-view'),
+    path('stream-text', streamText, name='streamer-view')
+
 ]
